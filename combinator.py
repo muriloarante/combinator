@@ -11,4 +11,4 @@ chars = [c for c in range(1, size + 1)]
 cSize = 1 # Quantos elementos cada combinação deve ter.
 
 printCombinations(chars, cSize)
-print(f"São {len(list(combinations(chars, cSize)))} listas possíveis.")
+print(f"São {len(list(combinations(chars, cSize)))} listas.")
