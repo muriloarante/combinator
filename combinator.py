@@ -1,14 +1,14 @@
 from itertools import combinations
 
 def printCombinations(arr, size):
-    for p in combinations(arr, size):
-        for c in p:
+    for combination in combinations(arr, size):
+        for char in combination:
             print(c, end=" ")
         print("")
     
-size = 1 # Quantos elementos a lista deve ter.
-chars = [c for c in range(1, size + 1)]
-cSize = 1 # Quantos elementos cada combinação deve ter.
+n = 1 
+elements = [c for c in range(1, size + 1)]
+choose = 1 
 
-printCombinations(chars, cSize)
-print(f"São {len(list(combinations(chars, cSize)))} listas.")
+printCombinations(elements, choose)
+print(f"There are {len(list(combinations(elements, choose)))} combinations.")
